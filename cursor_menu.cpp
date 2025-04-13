@@ -1,7 +1,7 @@
-#include <iostream>
-#include <conio.h>
 #include <windows.h>
 #include <ctime>
+#include <conio.h>
+#include <iostream>
 
 static int lastSelectedPosition = 0;
 
@@ -11,7 +11,7 @@ void setCursorPos(int y) {
 }
 
 int showMenu(const std::string& title, const std::string opts[], int count, bool rememberPosition = false) {
-    srand(time(0));
+    srand(time(NULL));
     HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 
     system("cls");
